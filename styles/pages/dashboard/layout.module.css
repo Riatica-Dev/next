@@ -1,0 +1,189 @@
+/** layout styling  **/
+.wrapper {
+  overflow-x: hidden;
+}
+
+.sidebarWrapper {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  background-color: white;
+  min-height: 100vh;
+  max-width: 280px;
+  min-width: 280px;
+}
+
+.toggled .sidebarWrapper {
+  left: -280px;
+}
+
+.sidebarContent {
+  height: 100vh;
+  left: 0;
+  position: sticky;
+  top: 0;
+}
+
+.sidebarWrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+.pageContentWrapper {
+  margin-left: 280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+  width: 100%;
+}
+
+.toggled .pageContentWrapper {
+  margin-left: 0px;
+}
+
+/** Navbar styling  **/
+.nav {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 280px);
+  z-index: 99;
+  background-color: white;
+  padding: 0.75rem 0.875rem;
+}
+
+.toggled .nav {
+  width: 100%;
+}
+
+.toggleBtn {
+  cursor: pointer;
+}
+
+.seachInput {
+  padding: 0.375rem 0.75rem;
+}
+
+.inputGroup {
+  border: 1px solid;
+}
+
+.inputGroupText {
+  padding-right: 0rem;
+  padding-left: 0.2rem;
+}
+
+.formControl {
+  width: 250px !important;
+}
+
+.searchBtn,
+.settingBtn {
+  display: none !important;
+}
+
+/* notificattion */
+.notification {
+  position: absolute;
+  margin-left: 4px;
+  font-size: 25px;
+  margin-top: -11px;
+}
+
+/** Sidebar styling  **/
+/* Pirce coins watch */
+.priceCoin {
+  background-color: #eee;
+  padding: 0.625rem;
+  margin-left: 1.625rem;
+  margin-right: 1.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.price {
+  color: #3f444e;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.balanceText {
+  font-size: 15px;
+}
+/* nav link in aside */
+.navItem {
+  padding: 0.625rem;
+  margin-left: 1.625rem;
+  margin-right: 1.625rem;
+}
+
+.navLink {
+  color: black;
+}
+
+.activeLink {
+  background-color: #eee !important;
+}
+
+.badge {
+  background-color: #eee;
+  height: 22px;
+  border-radius: 3px;
+  padding: 0px 5px;
+}
+
+.activeLink .badge {
+  background-color: white;
+}
+/* accordion link */
+.accordionButton {
+  background: none;
+  padding: 0px;
+  box-shadow: none;
+}
+.accordionButton:focus {
+  box-shadow: none;
+}
+.accordionButton:not(.collapsed) {
+  color: black;
+  background-color: white;
+}
+.accordionLink {
+  padding: 0.5rem 0rem 0.5rem 3.2rem;
+}
+.accordionLink:last-child {
+  padding: 0rem 0rem 0rem 3.2rem;
+}
+
+/** Resiponsive desgin **/
+@media (max-width: 991.98px) {
+  /* styled sidebar */
+  .sidebarWrapper {
+    left: -280px;
+  }
+
+  .toggled .sidebarWrapper {
+    left: 0px;
+  }
+
+  .pageContentWrapper {
+    margin-left: 0px;
+  }
+
+  .toggled .pageContentWrapper {
+    margin-left: 280px;
+  }
+  .nav {
+    width: 100%;
+  }
+  /*navbar styling  */
+  .searchBtn,
+  .settingBtn {
+    display: unset !important;
+  }
+  .searchForm,
+  .dropmenuBtn {
+    display: none !important;
+  }
+}

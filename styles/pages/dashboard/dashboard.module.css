@@ -1,0 +1,6 @@
+/** Golbal styling dashboard  **/
+.bgDashboad {
+  padding-top: 90px;
+  background-color: #eee;
+  min-height: calc(100vh - 40px);
+}

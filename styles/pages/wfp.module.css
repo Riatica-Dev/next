@@ -1,0 +1,27 @@
+.section {
+  padding-bottom: 30px;
+}
+
+.backgroundImage {
+  background-image: url("../../public/images/mountain_faq_image.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0px;
+}
+
+@media (max-width: 991.98px) {
+  .fullText {
+    padding: 15px 0px !important;
+  }
+  .backgroundImage {
+    display: none;
+  }
+  .section {
+    background-image: url("../../public/images/mountain_faq_image_mobile.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 0px 0px 20px 0px;
+  }
+}

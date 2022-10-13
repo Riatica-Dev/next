@@ -1,0 +1,178 @@
+.form {
+  width: 60%;
+}
+
+.formContent {
+  padding: 25px;
+}
+
+.textIcons {
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.inputGroup {
+  width: 180px;
+}
+
+.stepsForm {
+  margin: 25px auto 0px auto;
+}
+
+.formControl {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  height: 45px;
+  margin-top: 5px;
+}
+.formControlTextarea {
+  height: 38px;
+}
+/* styling Input group */
+.icons {
+  cursor: pointer;
+  font-size: 23px;
+}
+.formControl:focus + .textIcons {
+  border-color: gray;
+}
+/* styling the preview image */
+.imagePreview {
+  width: 160px;
+}
+
+.imagePreview span:first-child {
+  background: var(--cf-cultured);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.imagePreview span:last-child {
+  border-radius: 20px;
+}
+.deleteBtn {
+  position: absolute;
+  position: absolute;
+  margin-top: -13px;
+  z-index: 10;
+}
+/* styling the select menu */
+.dropdownMenu {
+  max-height: 345px;
+  overflow: auto;
+  cursor: pointer;
+}
+.dropdownImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* description width */
+.descWidth {
+  width: 30%;
+}
+/* backword button styling */
+.ms {
+  top: 216px;
+  margin-left: 0px;
+}
+
+.btn {
+  width: 120px;
+  height: 35px;
+  border: 1px solid rgb(172, 172, 172);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 0.5s;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  z-index: -1;
+  transition: 0.5s;
+  content: "";
+}
+
+.btn::before {
+  height: 50px;
+  width: 80px;
+}
+
+.btn::after {
+  width: 125px;
+  height: 15px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn:hover::before {
+  width: 0px;
+  background: #fff;
+}
+
+.btn:hover::after {
+  height: 0px;
+  background: #fff;
+}
+
+.btn:hover {
+  background: #fff;
+}
+
+.hidden {
+  display: block;
+}
+.minHeight {
+  min-height: 58vh;
+}
+/* medium devices */
+@media (max-width: 991.98px) {
+  .form {
+    width: 100%;
+  }
+  .formContent {
+    padding: 5px;
+  }
+  .stepsForm {
+    padding: 0;
+  }
+  .descWidth {
+    width: 90%;
+  }
+  .ms {
+    margin-left: 100px;
+    width: 65%;
+    text-align: center;
+  }
+  .hidden {
+    display: none !important;
+  }
+  .minHeight {
+    min-height: 50vh;
+  }
+}

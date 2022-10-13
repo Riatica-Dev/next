@@ -1,0 +1,75 @@
+/* Styling the nav compnonet */
+.href:hover {
+  color: white !important;
+}
+
+/* grid alignment */
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: [col1] 33.33% [col2] 33.33% [col3] 33.33%;
+  grid-gap: 10px;
+}
+
+/* Styling the navbar compnonet */
+.header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.headerContent {
+  position: relative;
+  z-index: 2;
+}
+.centerText {
+  padding-top: 10%;
+}
+.content {
+  height: 83%;
+}
+
+.telegramIcons {
+  position: relative;
+  top: 90px;
+}
+
+/* medium devices  */
+@media (max-width: 991.98px) {
+  .content {
+    height: 75%;
+  }
+}
+
+@media (max-height: 768px) {
+  .container {
+    height: 30vh;
+  }
+  .centerText {
+    padding-top: 0%;
+  }
+}
+
+/* smaller devices */
+@media (max-height: 465px) {
+  .centerText {
+    padding-top: 0%;
+  }
+  .telegramIcons {
+    margin-top: -95px;
+  }
+}

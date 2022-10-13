@@ -1,0 +1,75 @@
+/* styling the selectCompaignTypeForm component */
+.formSelect {
+  background: #d9d9d9;
+  border-radius: 10px;
+  height: 70px;
+  border: none;
+}
+
+/* styling the roleCompanyForm component */
+.labelExeplination {
+  font-size: 15px;
+  color: var(--cf-gray65);
+}
+
+/* styling the verifyIdentity component*/
+.ulCircle {
+  border: 1px solid black;
+  height: 18px;
+  width: 18px;
+  font-size: 15px;
+}
+
+.radioInput {
+  border: 1px solid #bdbdbd;
+  height: 60px;
+  cursor: pointer;
+}
+
+.inputRadioButton {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.iconsRadio {
+  background-color: var(--cf-gray65);
+  color: white;
+  font-size: 25px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  margin-right: 10px;
+}
+
+.formRadioLabel {
+  color: var(--cf-gray65);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.inputRadioButton:checked + .formRadioLabel {
+  color: black;
+}
+
+.inputRadioButton:checked + .formRadioLabel .iconsRadio {
+  background-color: black;
+}
+/* styling the telegram form  */
+.borderGray {
+  border-color: gray;
+}
+.dropzoneInput {
+  width: 50%;
+}
+/* medium devices */
+@media (max-width: 991.98px) {
+  .form {
+    width: 100%;
+  }
+  .dropzoneInput {
+    width: 100%;
+  }
+}

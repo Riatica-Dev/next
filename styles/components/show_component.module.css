@@ -1,0 +1,89 @@
+/* stylingthe navbar */
+.navbar {
+  width: 80%;
+  justify-content: center;
+}
+.navbar a {
+  margin-right: 3rem;
+}
+.faqLink {
+  width: 20%;
+}
+.mutedLinks {
+  font-size: 12px;
+  padding: 0px;
+  margin-top: -11px;
+}
+.active {
+  color: white !important;
+  background-color: black;
+  min-width: 100px;
+  text-align: center;
+}
+.active:hover {
+  color: white !important;
+}
+.widthShowComponent {
+  min-width: 6rem;
+}
+
+.hrefHover {
+  text-decoration: none;
+}
+
+.hrefHover:hover {
+  text-decoration: underline;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  background: white;
+  padding: 5px 0px;
+  animation: fadeInDown 0.5s ease-in-out 0s 1 normal none running;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Responsive desgin
+/* small devices */
+@media (max-width: 767.98px) {
+  .navbar,
+  .faqLink {
+    width: 100%;
+  }
+  .navbar a {
+    margin-right: 0rem;
+  }
+  .textCenter {
+    text-align: center;
+  }
+
+  .paddingText {
+    padding: 0rem 1.5rem;
+  }
+
+  .flexSmallReverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.linesAnimation {
+  position: absolute;
+  left: 0px;
+  width: 27.4%;
+  transform: rotate(40deg);
+  transform: translate3d(-150px, 0, 0);
+}

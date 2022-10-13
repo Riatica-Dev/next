@@ -1,0 +1,44 @@
+/* text color */
+.text-grey-50 {
+  color: var(--cf-grey50) !important;
+}
+.text-grey-100 {
+  color: var(--cf-grey-100) !important;
+}
+.text-grey-200 {
+  color: var(--cf-grey-200) !important;
+}
+.text-grey-300 {
+  color: var(--cf-grey-300) !important;
+}
+.text-grey-400 {
+  color: var(--cf-grey-400) !important;
+}
+.text-grey-500 {
+  color: var(--cf-grey-500) !important;
+}
+.text-grey-600 {
+  color: var(--cf-grey-600) !important;
+}
+.text-grey-700 {
+  color: var(--cf-grey-700) !important;
+}
+.text-grey-800 {
+  color: var(--cf-grey-800) !important;
+}
+.text-grey-900 {
+  color: var(--cf-grey-900) !important;
+}
+
+/* font  style */
+.text-bodoni {
+  font-family: var(--libre-bodoni) !important;
+}
+.text-proxima-nova {
+  font-family: var(--proxima-nova) !important;
+}
+
+/*  align style  */
+.text-justify {
+  text-align: justify;
+}

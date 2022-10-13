@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../public/fonts/proxima-nova-font.otf");
+}
+
+:root {
+  --proxima-nova: "Proxima Nova";
+  --libre-bodoni: "Libre Bodoni";
+}
+
+/* font weight */
+.fw-100 {
+  font-weight: 100 !important;
+}
+.fw-200 {
+  font-weight: 200 !important;
+}
+.fw-300 {
+  font-weight: 300 !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}

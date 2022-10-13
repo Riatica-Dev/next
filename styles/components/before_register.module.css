@@ -1,0 +1,15 @@
+.psOverflow {
+  overflow: scroll;
+  overflow-x: scroll;
+  max-height: 479px;
+  overflow-x: hidden;
+}
+
+/* Styling the confimation number email */
+.validationDigit {
+  width: 45px;
+  height: 45px;
+}
+.pinWidth {
+  max-width: 300px;
+}

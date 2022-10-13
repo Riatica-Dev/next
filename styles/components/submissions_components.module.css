@@ -1,0 +1,55 @@
+/* style the single title */
+.titles {
+  height: calc(100vh - 275px);
+  min-width: 300px;
+  padding: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.singleTitle {
+  background-color: #eee;
+  cursor: pointer;
+  max-width: 350px;
+}
+
+.radioButton {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.title {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.active .radioButton {
+  background-image: url("../../public/images/akar_icons_check.png");
+  background-position: center;
+  background-size: cover;
+}
+
+/* styling the campaign result display */
+.btn {
+  width: 100px;
+}
+.btn:first-child {
+  background-color: #eee;
+}
+.btn:nth-child(2) {
+  background-color: #ca0606;
+  color: white;
+}
+.btn:last-child {
+  background-color: #00c342;
+  color: white;
+}
+
+/* styling navbar */
+.navUnderline {
+  border-bottom: 3.5px solid black;
+}
